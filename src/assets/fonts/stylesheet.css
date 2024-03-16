@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'boxicons';
+    src: url('boxicons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ========================= additional css ============================== */
+:focus-visible { outline-offset: 4px; }
+  
+::-webkit-scrollbar { width: 12px; }
+
+::-webkit-scrollbar-track { background-color: var(--cultured-2); }
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+  border: 2px solid var(--cultured-2);
+}
+
+::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+
+.project-list::-webkit-scrollbar { height: 15px; }
+
+.project-list::-webkit-scrollbar-track { outline: 2px solid #FFCE00; }
+
+.project-list::-webkit-scrollbar-thumb {
+  border: 3px solid var(--cultured-1);
+  background-color: #FFCE00;
+}
+
+.navbar_button{
+    border: 2px solid white;
+    color: white;
+}
+
+.navbar_button:is(:hover, :active)
+{
+    background: #FFCE00;
+    border: 2px solid #FFCE00;
+}
+
+.navbar_button-2{
+    border: 2px solid #FFCE00;
+    background-color: #FFCE00;
+    color: white;
+}
+
+.navbar_button-2:is(:hover, :active)
+{
+    background: white;
+    border: 2px solid #FFCE00;
+    color: #FFCE00;
+}
+
+
+.navbar_on_scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: #094152;
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.navbar_not_scroll {
+    position: absolute;
+    background-color: #094152;
+    padding: 0 2rem;
+   }
+
+   .show-mobile-navbar {
+    margin-top: 0;
+    display: block;
+    left: 0;
+  }
+  
+  .dont-show-mobile-navbar {
+    margin-top: 2rem;
+    display: none;
+    left: 0;
+  }
+
+  .text-on-display {
+    color: #FFCE00;
+   }
+  
+   .text-not-display {
+    color: #fff;
+   }
+  
+  .text-on-display:is(:hover, :active){
+    color: #000;
+   }
+  
+   .text-not-display:is(:hover, :active){
+    color: #FFCE00;
+   }
